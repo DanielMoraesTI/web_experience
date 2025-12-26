@@ -84,6 +84,10 @@ main {
     gap: 1rem;
 }
 
+.evento[data-palco="arena-warzone"] {
+    display: flex;
+}
+
 .evento {
     padding: 1rem;
     border: 0.5px #111 solid;
