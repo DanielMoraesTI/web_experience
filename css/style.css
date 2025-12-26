@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    line-height: 1.6;
+    color: #222;
+}
+
+header {
+    position: sticky;
+    padding: 1rem;
+    background-color: #111;
+}
+
+.titulo {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+}
+
+.barra a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.bilhetes {
+    display: flex;
+    color: #111;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.bilhetes button {
+    color: white;
+    background: cornflowerblue;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+main {
+    flex-grow: 1;
+    flex: 1;
+}
+
+.programacao {
+    padding: 2rem;
+}
+
+.programacao-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.evento {
+    padding: 1rem;
+    border: 0.5px #111 solid;
+    border-radius: 8px;
+}
+
+.evento[data-palco="principal"] {
+    background-color: green;
+}
+
+.evento[data-palco="arena-warzone"] {
+    background-color: red;
+}
+
+.evento[data-palco="arena-redsec"] {
+    background-color: blue;
+}
+
+.evento[data-palco="principal-palestra"] {
+    background-color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .barra {
+        flex-direction: row;
+    }
+    .programacao-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
