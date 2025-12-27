@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
     line-height: 1.6;
     color: #222;
+    background-color: #eee;
 }
 
 header {
@@ -28,7 +29,7 @@ header {
     color: white;
 }
 
-.titulo a {
+.link-simples {
     text-decoration: none;
     color: #fff;
 }
@@ -65,15 +66,25 @@ header {
     padding: 2rem;
 }
 
-.bilhetes button {
+.bilhetes button, div button {
     color: white;
     background: cornflowerblue;
     cursor: pointer;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     width: fit-content;
+    transition-duration: 0.3s;
+    border: 2px solid transparent;
 }
+
+#comprar:hover, .btn-enviar:hover{
+    transition-duration: 0.3s;
+    background-color: blueviolet;
+    padding: 0.6rem 1.3rem;
+    border: 2px solid blueviolet;
+    box-shadow: 5px 5px 10px 5px #aaa;
+}   
 
 main {
     flex-grow: 1;
@@ -116,13 +127,21 @@ main {
     background-color: yellow;
 }
 
-footer {
+footer p {
     text-align: center;
     padding: 1rem;
     background: #111;
     color: #fff;
 }
 
+.nav-icons {
+    background-color: aqua;
+    text-align: center;
+}
+.nav-icons img {
+    margin: 10px 5px 0px 0px;
+    width: 20px;
+}
 
 @media (min-width: 768px) {
     .barra {
@@ -131,4 +150,22 @@ footer {
     .programacao-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .nav-icons {
+        text-align: end;
+    }
+
+    .logo {
+        width: 75%
+    }
 }
+
+form div {
+    margin: 10px 0px;
+}
+
+.form-contactos input {
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding: 5px;
+}
+

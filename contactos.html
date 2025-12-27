@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/image/favicon-fff.png" type="image/x-icon">
     <title>Contactos | Festival de Tecnologia</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="campeonato">
-        <h1 class="titulo"><a href="index.html">Campeonato de Warzone e RedSec</a></h1>
+        <h1 class="titulo"><a href="index.html" class="link-simples">Campeonato de Warzone e RedSec</a></h1>
     </header>
     <nav class="menu">
         <ul class="barra">
@@ -18,13 +19,52 @@
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="programacao">
         <h1>Contactos</h1>
+        <section class="programacao-grid">
+            <section>
+                <h2>Vamos conversar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid cupiditate veritatis nobis fuga quas, non aut earum placeat nulla quia magnam sunt corporis ducimus perspiciatis voluptate, enim tempore quaerat</p>
+                <img src="assets/image/logo-transparente-semFundo.png" alt="" class="logo">
+            </section>
+            <section class="form-contactos">
+                <form action="" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <textarea name="mensagem" id="mensagem" required cols="40" rows="10" placeholder="Deixe sua mensagem"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="consente" id="consente">
+                    <label for="consente">Eu consinto que o Web Experience armazene e trate os meus dados conforme a LGPD.</label>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </div>
+        
+                </form>
+            </section>
+    </section>
     </main>
     <footer>
-        <p></p>
+            <nav class="nav-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="assets/image/facebook.png" alt="Para acessar o Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/image/instagram.png" alt="Para acessar o Instagram"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="assets/image/linkedin.png" alt="Para acessar o LinkedIn"></a>
+            <a href="https://www.x.com/" target="_blank"><img src="assets/image/twitter.png" alt="Para acessar o X"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="assets/image/youtube.png" alt="Para acessar o YouTube"></a>
+        </nav>
         <p>&copy 2025 | Projeto realizado por Taís Dias e Daniel Moraes - Curso Frontend, Programa UPskill, Faculdade de Ciências da Universidade de Lisboa</p>
     </footer>
-    
 </body>
 </html>
