@@ -101,10 +101,6 @@ main {
     gap: 1rem;
 }
 
-.evento[data-palco="arena-warzone"] {
-
-}
-
 .evento {
     padding: 1rem;
     border: 0.5px #111 solid;
@@ -125,6 +121,19 @@ main {
 
 .evento[data-palco="principal-palestra"] {
     background-color: yellow;
+}
+
+.apoio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.apoio img {
+    border-radius: 12px;
 }
 
 footer p {
@@ -152,6 +161,10 @@ footer p {
     }
     .nav-icons {
         text-align: end;
+    }
+
+    .apoio {
+        flex-direction: row;
     }
 
     .logo {
