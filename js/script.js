@@ -15,7 +15,7 @@ dia.addEventListener("change", () => {
 
 function confirmar(event) {
     event.preventDefault();
-    alert("Compra realizada com sucesso, seu ingresso foi enviado para seu e-mail!");
+    alert("Compra realizada, assim que for confirmado o pagamento o seu ingresso será enviado para seu e-mail!");
 };
 
 function responder(event) {
