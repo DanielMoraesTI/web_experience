@@ -66,7 +66,7 @@ header {
     padding: 2rem;
 }
 
-.bilhetes button, div button {
+.botao {
     color: white;
     background: cornflowerblue;
     cursor: pointer;
@@ -78,7 +78,7 @@ header {
     border: 2px solid transparent;
 }
 
-#comprar:hover, .btn-enviar:hover{
+.botao:hover{
     transition-duration: 0.3s;
     background-color: blueviolet;
     padding: 0.6rem 1.3rem;
@@ -182,3 +182,23 @@ form div {
     padding: 5px;
 }
 
+.container-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-flex img {
+    margin: 10px;
+    height: 450px;
+    width: 270px;
+    border-radius: 20px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 5px 5px 10px 2px #aaa;
+}
+
+.info-box article{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 20px;
+}
