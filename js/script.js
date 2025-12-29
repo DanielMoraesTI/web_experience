@@ -17,3 +17,8 @@ function confirmar(event) {
     event.preventDefault();
     alert("Compra realizada com sucesso, seu ingresso foi enviado para seu e-mail!");
 };
+
+function responder(event) {
+    event.preventDefault();
+    alert("Obrigado pelo contacto, iremos responder em até 48 horas");
+};
