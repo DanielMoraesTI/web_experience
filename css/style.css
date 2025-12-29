@@ -49,6 +49,7 @@ header {
     text-decoration: none;
     list-style: none;
     gap: 1rem;
+    padding: 5px 0px 5px 20px;
 }
 
 .barra a {
@@ -56,6 +57,10 @@ header {
     text-decoration: none;
     list-style: none;
     font-weight: bold;
+}
+
+.nav-links:hover {
+    color: #fff;
 }
 
 .bilhetes {
@@ -207,12 +212,14 @@ footer p {
     padding: 1rem;
     background: #111;
     color: #fff;
+    font: 0.5rem;
 }
 
 .nav-icons {
     background-color: rgba(0, 255, 255, 0.549);
     text-align: center;
 }
+
 .nav-icons img {
     margin: 10px 5px 0px 0px;
     width: 20px;
@@ -232,20 +239,18 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
     .nav-icons {
-        text-align: end;
+        text-align: center;
     }
-
     .apoio {
         flex-direction: row;
     }
-
     .logo {
         width: 50%;
     }
-}
-
-form div {
-    margin: 10px 0px;
+    .container-contactos {
+        margin: 15px 0px;
+        width:75%;
+    }
 }
 
 .form-contactos input[type="text"],
@@ -256,10 +261,17 @@ textarea {
     padding: 5px;
     background-color: #ffffff85;
     width: 100%;
-  max-width: 400px; /* ajusta ao teu gosto */
-  padding: 10px;
-  box-sizing: border-box;
-    
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
 }
 
 .container-flex {
@@ -287,7 +299,7 @@ textarea {
     width: 80%;
     background-color: #ffffffb2;
     margin: auto;
-    padding: 100px;
+    padding: 5%;
 }
 
 .bg-contactos {
