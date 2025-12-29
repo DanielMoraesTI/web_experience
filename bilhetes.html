@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="campeonato">
-        <h1 class="titulo"><a href="index.html" class="link-simples">Campeonato de Warzone e RedSec</a></h1>
+        <h1 class="titulo"><a href="index.html" class="link-simples">RedZone eSports Festival - WEB Experience</a></h1>
     </header>
     <nav class="menu">
         <ul class="barra">
@@ -69,6 +69,29 @@
         <section class="bilhetes">
             <button id="comprar" class="botao" onclick="confirmar(event)">Finalizar Compra</a></button>
         </section>
+
+        <div class="modal-completo" id="modalPesquisa" aria-hidden="true">
+            <fieldset class="modal-conteudo">
+                <legend>Qual o tema que te chamou a atenção para participar do evento?</legend>
+                <div class="opcoes">
+                    <label>
+                        <input type="radio" name="pesquisa" value="palestras" checked>
+                        Palestras
+                    </label>
+                    <label>
+                        <input type="radio" name="pesquisa" value="redsec">
+                        RedSec
+                    </label>
+                    <label>
+                        <input type="radio" name="pesquisa" value="warzone">
+                        Warzone
+                    </label>
+                </div>
+                <div class="botoes">
+                    <button type="submit" id="fechar-modal">Confirmar</button>
+                </div>
+            </fieldset>
+        </div>
 
         <section class="patrocinio">
             <h3>Patrocinadores:</h3>

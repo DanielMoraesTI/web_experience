@@ -149,6 +149,52 @@ fieldset:has(input[value="mbway"]:checked) .telemovel {
     display: block;
 }
 
+.modal-completo {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-conteudo{
+    background: #fff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.modal-conteudo legend {
+    display: table;
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 footer p {
     text-align: center;
     padding: 1rem;
