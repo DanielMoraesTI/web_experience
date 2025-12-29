@@ -44,6 +44,7 @@ header {
 
 .barra {
     display: flex;
+    background-color: aqua;
     flex-direction: column;
     text-decoration: none;
     list-style: none;
@@ -58,12 +59,16 @@ header {
 
 .bilhetes {
     display: flex;
-    color: #111;
+    color: #E5E7EB;
     flex-direction: column;
-    background-color: #f4f4f4;
+    background-color: #121826;
     align-items: center;
     text-align: center;
     padding: 2rem;
+}
+
+.filtro {
+    background-color: #9CA3AF;
 }
 
 .botao {
@@ -92,6 +97,7 @@ main {
 }
 
 .programacao {
+    background-color: #9CA3AF;
     padding: 2rem;
 }
 
@@ -108,7 +114,7 @@ main {
 }
 
 .evento[data-palco="principal"] {
-    background-color: green;
+    background-color: #E5E7EB;
 }
 
 .evento[data-palco="arena-warzone"] {
@@ -120,7 +126,7 @@ main {
 }
 
 .evento[data-palco="principal-palestra"] {
-    background-color: yellow;
+    background-color: #E5E7EB;
 }
 
 .patrocinio {
