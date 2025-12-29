@@ -218,9 +218,11 @@ footer p {
     width: 20px;
 }
 
-.logo {
-    display: none;
-}
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+} 
 
 @media (min-width: 768px) {
     .barra {
