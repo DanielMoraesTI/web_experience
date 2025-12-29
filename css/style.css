@@ -123,6 +123,10 @@ main {
     background-color: yellow;
 }
 
+.patrocinio {
+    max-height: fit-content;
+}
+
 .apoio {
     display: flex;
     justify-content: space-between;
