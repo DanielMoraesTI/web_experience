@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<body>
+<body class="bg-contactos">
     <header class="campeonato">
         <h1 class="titulo"><a href="index.html" class="link-simples">RedZone eSports Festival - WEB Experience</a></h1>
     </header>
@@ -20,39 +20,40 @@
             <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </nav>
-    <main class="programacao">
+    <main class="programacao container">
         <h1>Contactos</h1>
         <section class="programacao-grid">
             <section>
                 <h2>Vamos conversar</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid cupiditate veritatis nobis fuga quas, non aut earum placeat nulla quia magnam sunt corporis ducimus perspiciatis voluptate, enim tempore quaerat</p>
+                <p>
+                    Tens alguma dúvida, sugestão ou queres saber mais sobre o RedZone eSports Festival – WEB Experience?
+                </p>
+                <p>
+                    Estamos à disposição para te ajudar! Preenche o formulário ao lado e entraremos em contacto contigo o mais breve possível. A tua participação é muito importante para nós.
+                </p>
                 <img src="assets/image/logo-transparente-semFundo.png" alt="" class="logo">
             </section>
             <section class="form-contactos">
                 <form action="" method="post">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-
-                <div>
-                    <textarea name="mensagem" id="mensagem" required cols="40" rows="10" placeholder="Deixe sua mensagem"></textarea>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="consente" id="consente">
-                    <label for="consente">Eu consinto que o Web Experience armazene e trate os meus dados conforme a LGPD.</label>
-                </div>
-
-                <div>
-                    <button type="submit" class="botao" onclick="responder(event)">Enviar</button>
-                </div>
-        
+                    <div>
+                        <label for="nome">Nome</label><br>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" required placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="consente" id="consente">
+                        <label for="consente">Eu consinto que o Web Experience armazene e trate os meus dados conforme a LGPD.</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="botao" onclick="responder(event)">Enviar</button>
+                    </div>
                 </form>
             </section>
     </section>
