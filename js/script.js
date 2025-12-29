@@ -12,3 +12,8 @@ dia.addEventListener("change", () => {
         }
     });  
 });
+
+function confirmar(event) {
+    event.preventDefault();
+    alert("Compra realizada com sucesso, seu ingresso foi enviado para seu e-mail!");
+};

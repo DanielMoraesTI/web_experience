@@ -25,12 +25,12 @@
 
       <section>
         <div>
-            <label for="nome">Nome</label>
+            <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
         </div>
 
         <div>
-            <label for="email">Email</label>
+            <label for="email">E-mail:</label>
             <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
         </div>
 
@@ -43,8 +43,20 @@
             </select>
         </section>
 
+        <fieldset>
+            <legend>Formas de Pagamento</legend>
+            <label>
+                <input type="radio" name="pagamento" value="cartao" checked>
+                Cartão de Crédito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="multibanco" checked>
+                Multibanco
+            </label>
+        </fieldset>
+
         <section class="bilhetes">
-            <button id="comprar">Finalizar Compra</a></button>
+            <button id="comprar" onclick="confirmar(event)">Finalizar Compra</a></button>
         </section>
 
       </section>
