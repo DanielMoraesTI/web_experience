@@ -13,6 +13,13 @@ dia.addEventListener("change", () => {
     });  
 });
 
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.barra');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+});
+
 function confirmar(event) {
     event.preventDefault();
     alert("Compra realizada, assim que for confirmado o pagamento o seu ingresso será enviado para seu e-mail!");

@@ -43,13 +43,18 @@ header {
 }
 
 .barra {
-    display: flex;
+    display: none;
     background-color: rgba(0, 255, 255, 0.549);
     flex-direction: column;
     text-decoration: none;
     list-style: none;
     gap: 1rem;
-    padding: 5px 0px 5px 20px;
+    padding: 1rem;
+
+}
+
+.barra.ativo {
+    display: flex;
 }
 
 .barra a {
@@ -59,8 +64,21 @@ header {
     font-weight: bold;
 }
 
-.nav-links:hover {
-    color: #fff;
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    background-color: rgba(0, 255, 255, 0.549);
+    width: 100%;
+    text-align: left;
 }
 
 .bilhetes {
@@ -212,14 +230,12 @@ footer p {
     padding: 1rem;
     background: #111;
     color: #fff;
-    font: 0.5rem;
 }
 
 .nav-icons {
     background-color: rgba(0, 255, 255, 0.549);
     text-align: center;
 }
-
 .nav-icons img {
     margin: 10px 5px 0px 0px;
     width: 20px;
@@ -233,24 +249,33 @@ footer p {
 
 @media (min-width: 768px) {
     .barra {
+        display: flex;
         flex-direction: row;
     }
+    
+    .hamburger {
+        display: none;
+    }
+
     .programacao-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .nav-icons {
-        text-align: center;
+        text-align: end;
     }
+
     .apoio {
         flex-direction: row;
     }
+
     .logo {
         width: 50%;
     }
-    .container-contactos {
-        margin: 15px 0px;
-        width:75%;
-    }
+}
+
+form div {
+    margin: 10px 0px;
 }
 
 .form-contactos input[type="text"],
@@ -261,17 +286,10 @@ textarea {
     padding: 5px;
     background-color: #ffffff85;
     width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    box-sizing: border-box; 
-}
-
-fieldset {
-    border: none;
-}
-
-legend {
-    display: none;
+  max-width: 400px; /* ajusta ao teu gosto */
+  padding: 10px;
+  box-sizing: border-box;
+    
 }
 
 .container-flex {
@@ -299,7 +317,7 @@ legend {
     width: 80%;
     background-color: #ffffffb2;
     margin: auto;
-    padding: 5%;
+    padding: 100px;
 }
 
 .bg-contactos {
