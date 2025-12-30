@@ -19,10 +19,6 @@ function confirmar(event) {
     alert("Compra realizada, assim que for confirmado o pagamento o seu ingresso será enviado para seu e-mail!");
 };
 
-function responder(event) {
-    event.preventDefault();
-    alert("Obrigado pelo contacto, iremos responder em até 48 horas");
-};
 
 const abrirModal = document.getElementById("comprar");
 const fecharModal = document.getElementById("fechar-modal");
@@ -38,3 +34,28 @@ fecharModal.addEventListener("click", () => {
     modal.setAttribute("aria-hidden", "true");
     alert("Obrigado pela sua contribuição na pesquisa!");
 });
+
+
+// Confirmação de envio do formulário de contacto
+function mostrarConfirmacao(event) {
+  event.preventDefault();
+
+  const nomeInput = document.getElementById("nome");
+  const mensagem = document.getElementById("mensagem-confirmacao");
+
+  const nomeUtilizador = nomeInput.value;
+
+   mensagem.innerHTML = `
+    <strong>Olá, ${nomeUtilizador}!</strong><br>
+    Sua mensagem foi enviada com sucesso! <br>
+    Entraremos em contacto em breve! 😊
+  `;
+
+  mensagem.style.display = "block";
+  mensagem.style.color = "black";
+  mensagem.style.marginTop = "20px";
+  mensagem.style.border = "2px outset blueviolet";
+  mensagem.style.backgroundColor = "#ffffff85";
+  mensagem.style.textAlign = "center";
+  mensagem.style.width = "75%";
+}

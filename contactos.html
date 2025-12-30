@@ -37,9 +37,9 @@
                 </p>
                 <img src="assets/image/logo-transparente-semFundo.png" alt="" class="logo">
             </section>
-            <section class="form-contactos container-contactos">
-                <form action="" method="post">
-                    <fieldset>
+            <section class="container-contactos">
+                <form id="form-contactos">
+                    <fieldset class="borda-fieldset">
                         <legend>Dados do utilizador</legend>
                         <div>
                             <label for="nome">Nome</label><br>
@@ -50,24 +50,27 @@
                             <input type="email" name="email" id="email" required>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="borda-fieldset">
                         <legend>Mensagem</legend>
                         <div>
                             <label for="mensagem">Mensagem</label><br>
                             <textarea name="mensagem" id="mensagem" required rows="10" placeholder="Deixe sua mensagem"></textarea>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="borda-fieldset">
                         <div>
                             <input type="checkbox" name="consente" id="consente">
                             <label for="consente">Eu consinto que o Web Experience armazene e trate os meus dados conforme a RGPD.</label>
                         </div>
                     </fieldset>
-                        <div>
-                            <button type="submit" class="botao" onclick="responder(event)">Enviar</button>
-                        </div>
-                    </fieldset>
+                    <div>
+                        <button type="submit" class="botao" onclick="mostrarConfirmacao(event)">Enviar</button>
+                    </div>
+                    <p id="mensagem-confirmacao" style="display: none">
+                    </p>
+
                 </form>
+                
             </section>
         </section>
     </main>
