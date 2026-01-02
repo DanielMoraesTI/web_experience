@@ -119,6 +119,16 @@ header {
 
 }
 
+.pagamento {
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding: 5px;
+    background-color: #ffffff85;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .filtro {
     background-color: cornflowerblue;
     padding: 5px 0px;
