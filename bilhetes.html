@@ -24,97 +24,98 @@
             <li><a href="contactos.html" class="nav-links">Contactos</a></li>
         </ul>
     </nav>
-    <main class="alinhar">
-      <h1>Bilhetes</h1>
-
-      <section class="bilhetes-escolha">
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
-        </div>
-
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
-        </div>
-      </section>
-
+    <main>
+    <section class="alinhar">
+        <h1>Bilhetes</h1>
         <section class="bilhetes-escolha">
-            <p>Escolha sua opção de compra:</p>
-            <label>
-                <input type="checkbox" name="dia" value="todos">
-                Final de Semana: 50 €
-                <input type="number" name="qtd_todos" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
-            </label>
-            <label>
-                <input type="checkbox" name="dia" value="sabado">
-                Sábado: 20 €
-                <input type="number" name="qtd_sabado" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
-            </label>
-            <label>
-                <input type="checkbox" name="dia" value="domingo">
-                Domingo: 40 €
-                <input type="number" name="qtd_domingo" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
-            </label>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+            </div>
         </section>
 
-        <fieldset class="pagamento">
-            <legend>Formas de Pagamento</legend>
-            <label>
-                <input type="radio" name="pagamento" value="cartao" checked>
-                Cartão de Crédito
-            </label>
-
-            <label>
-                <input type="radio" name="pagamento" value="multibanco">
-                Multibanco
-            </label>
-            <label>
-                <input type="radio" name="pagamento" value="mbway">
-                MBWAY
-            </label>
-
-                <div class="cartao">
+            <section class="bilhetes-escolha">
+                <p>Escolha sua opção de compra:</p>
                 <label>
-                    Número:
-                    <input type="number" name="cartao" placeholder="Número do cartão">                
+                    <input type="checkbox" name="dia" value="todos">
+                    Final de Semana: 50 €
+                    <input type="number" name="qtd_todos" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
                 </label>
-                </div>
-
-                <div class="telemovel">
                 <label>
-                    Telemóvel:
-                    <input type="tel" name="telemovel" placeholder="Digite seu telemóvel">                
+                    <input type="checkbox" name="dia" value="sabado">
+                    Sábado: 20 €
+                    <input type="number" name="qtd_sabado" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
                 </label>
-                </div>
-        </fieldset>
+                <label>
+                    <input type="checkbox" name="dia" value="domingo">
+                    Domingo: 40 €
+                    <input type="number" name="qtd_domingo" min="0" placeholder="Qtd" style="width: 50px; margin-left: 10px;">
+                </label>
+            </section>
 
-        <section class="bilhetes">
-            <button id="comprar" class="botao" onclick="confirmar(event)">Finalizar Compra</a></button>
-        </section>
+            <fieldset class="pagamento">
+                <legend>Formas de Pagamento</legend>
+                <label>
+                    <input type="radio" name="pagamento" value="cartao" checked>
+                    Cartão de Crédito
+                </label>
 
-        <div class="modal-completo" id="modalPesquisa" aria-hidden="true">
-            <fieldset class="modal-conteudo">
-                <legend>Qual o tema que te chamou a atenção para participar do evento?</legend>
-                <div class="opcoes">
+                <label>
+                    <input type="radio" name="pagamento" value="multibanco">
+                    Multibanco
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" value="mbway">
+                    MBWAY
+                </label>
+
+                    <div class="cartao">
                     <label>
-                        <input type="radio" name="pesquisa" value="palestras" checked>
-                        Palestras
+                        Número:
+                        <input type="number" name="cartao" placeholder="Número do cartão">                
                     </label>
+                    </div>
+
+                    <div class="telemovel">
                     <label>
-                        <input type="radio" name="pesquisa" value="redsec">
-                        RedSec
+                        Telemóvel:
+                        <input type="tel" name="telemovel" placeholder="Digite seu telemóvel">                
                     </label>
-                    <label>
-                        <input type="radio" name="pesquisa" value="warzone">
-                        Warzone
-                    </label>
-                </div>
-                <div class="botoes">
-                    <button type="submit" id="fechar-modal">Confirmar</button>
-                </div>
+                    </div>
             </fieldset>
-        </div>
+
+            <section class="bilhetes">
+                <button id="comprar" class="botao" onclick="confirmar(event)">Finalizar Compra</a></button>
+            </section>
+
+            <div class="modal-completo" id="modalPesquisa" aria-hidden="true">
+                <fieldset class="modal-conteudo">
+                    <legend>Qual o tema que te chamou a atenção para participar do evento?</legend>
+                    <div class="opcoes">
+                        <label>
+                            <input type="radio" name="pesquisa" value="palestras" checked>
+                            Palestras
+                        </label>
+                        <label>
+                            <input type="radio" name="pesquisa" value="redsec">
+                            RedSec
+                        </label>
+                        <label>
+                            <input type="radio" name="pesquisa" value="warzone">
+                            Warzone
+                        </label>
+                    </div>
+                    <div class="botoes">
+                        <button type="submit" id="fechar-modal">Confirmar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
         <hr>
         <section class="patrocinio">
             <h3  class="titulos-white-center">Patrocinadores:</h3>

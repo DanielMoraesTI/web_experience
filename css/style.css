@@ -95,9 +95,13 @@ header {
 }
 
 .alinhar {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    width: 80%;
+    background-color: #ffffffb2;
+    margin: auto;
+    padding: 3% 5%;
 }
 
 .bilhetes {
@@ -203,16 +207,17 @@ main {
 
 .apoio {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 2rem;
-    gap: 1rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .apoio img {
     border-radius: 12px;
+    max-width: 100%;
+    height: auto;  
 }
 
 .cartao {
@@ -329,6 +334,7 @@ footer p {
 
     .apoio {
         flex-direction: row;
+        gap: 6rem;
     }
 
     .logo {
