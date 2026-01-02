@@ -174,23 +174,6 @@ main {
     color: #fff;
     border: 1px solid blueviolet;
 }
-/*
-.evento[data-palco="principal"] {
-    background-color: #e5e7eba6;
-}
-
-.evento[data-palco="arena-warzone"] {
-    background-color: red;
-}
-
-.evento[data-palco="arena-redsec"] {
-    background-color: blue;
-}
-
-.evento[data-palco="principal-palestra"] {
-    background-color: #E5E7EB;
-}
-    */
 
 .patrocinio {
     max-height: fit-content;
@@ -463,4 +446,6 @@ img {
 
 .container-media {
     margin: 3rem 0;
+    padding: 2rem 0;
+    background-color: #626262;
 }
