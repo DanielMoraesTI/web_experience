@@ -96,9 +96,9 @@ header {
 
 .bilhetes {
     display: flex;
-    color: #E5E7EB;
+    color: black;
     flex-direction: column;
-    background-color: #121826;
+    background-color: #ffffff85;
     align-items: center;
     text-align: center;
     padding: 2rem;
@@ -106,12 +106,17 @@ header {
 
 .bilhetes-escolha {
     display: flex;
-    color: #E5E7EB;
+    color: black;
     flex-direction: column;
-    background-color: #121826;
+    background-color: #ffffff85;
     align-items: flex-start;
     text-align: center;
-    padding: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding: 5px;
+
 }
 
 .filtro {
