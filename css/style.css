@@ -101,6 +101,16 @@ header {
     padding: 2rem;
 }
 
+.bilhetes-escolha {
+    display: flex;
+    color: #E5E7EB;
+    flex-direction: column;
+    background-color: #121826;
+    align-items: flex-start;
+    text-align: center;
+    padding: 2rem;
+}
+
 .filtro {
     background-color: cornflowerblue;
     padding: 5px 0px;
