@@ -94,6 +94,12 @@ header {
     text-align: left;
 }
 
+.alinhar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .bilhetes {
     display: flex;
     color: black;
