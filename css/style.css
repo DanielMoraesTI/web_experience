@@ -208,6 +208,15 @@ main {
     border-radius: 12px;
 }
 
+.cartao {
+    display: none;
+    margin-top: 10px;
+}
+
+fieldset:has(input[value="cartao"]:checked) .cartao {
+    display: block;
+}
+
 .telemovel {
     display: none;
     margin-top: 10px;
