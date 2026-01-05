@@ -94,6 +94,10 @@ header {
     text-align: left;
 }
 
+.bg-bilhetes {
+    background-image: url('../assets/image/bg-setup.jpg');
+}
+
 .alinhar {
     display: flex;
     flex-direction: column;
