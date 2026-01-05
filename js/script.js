@@ -14,10 +14,28 @@ dia.addEventListener("change", () => {
 });
 
 
-function confirmar(event) {
+function confirmarCompra(event) {
     event.preventDefault();
-    alert("Compra realizada, assim que for confirmado o pagamento o seu ingresso será enviado para seu e-mail!");
-};
+
+    const nomeInput = document.getElementById("nome");
+    const mensagem = document.getElementById("mensagem-confirmacao");
+
+    const nomeUtilizador = nomeInput.value;
+
+    mensagem.innerHTML = `
+        <strong>Olá, ${nomeUtilizador}!</strong><br>
+        Sua compra foi realizada com sucesso! <br>
+        Seus bilhetes serão enviados para o e-mail indicado!
+    `;
+
+    mensagem.style.display = "block";
+    mensagem.style.color = "black";
+    mensagem.style.marginTop = "20px";
+    mensagem.style.border = "2px outset blueviolet";
+    mensagem.style.backgroundColor = "#ffffff85";
+    mensagem.style.textAlign = "center";
+    mensagem.style.width = "75%";
+}
 
 
 const abrirModal = document.getElementById("comprar");
