@@ -15,11 +15,15 @@ dia.addEventListener("change", () => {
 
 
 function confirmarCompra(event) {
+    const form = event.target;
+    if (!form.checkValidity()) {
+        return; 
+    }
+
     event.preventDefault();
 
     const nomeInput = document.getElementById("nome");
     const mensagem = document.getElementById("mensagem-confirmacao");
-
     const nomeUtilizador = nomeInput.value;
 
     mensagem.innerHTML = `
@@ -35,6 +39,10 @@ function confirmarCompra(event) {
     mensagem.style.backgroundColor = "#ffffff85";
     mensagem.style.textAlign = "center";
     mensagem.style.width = "75%";
+
+    const modal = document.getElementById("modalPesquisa");
+    modal.style.display = "flex"; // Ou "block", dependendo do seu CSS
+    modal.setAttribute("aria-hidden", "false");
 }
 
 
