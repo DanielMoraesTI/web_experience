@@ -43,7 +43,7 @@ function confirmarCompra(event) {
     const modal = document.getElementById("modalPesquisa");
     modal.style.display = "flex"; // Ou "block", dependendo do seu CSS
     modal.setAttribute("aria-hidden", "false");
-}
+};
 
 
 // Confirmação de envio do formulário de contacto
