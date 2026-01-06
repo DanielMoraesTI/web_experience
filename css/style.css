@@ -94,10 +94,6 @@ header {
     text-align: left;
 }
 
-.bg-bilhetes {
-    background-image: url('../assets/image/bg-setup.jpg');
-}
-
 .alinhar {
     display: flex;
     flex-direction: column;
@@ -130,7 +126,6 @@ header {
     border-radius: 5px;
     border: 1px solid #444;
     padding: 5px;
-
 }
 
 .pagamento {
@@ -355,12 +350,21 @@ form div {
 textarea, #dia {
     border-radius: 5px;
     border: 1px solid #444;
-    padding: 5px;
     background-color: #ffffff85;
     width: 100%;
     max-width: 400px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+#form-bilhetes input[type="text"],
+#form-bilhetes input[type="email"], 
+#form-bilhetes input[type="number"],
+#form-bilhetes input[type="email"] {
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding: 3px;
+    background-color: #ffffff85;
 }
 
 #dia {
@@ -399,8 +403,13 @@ textarea, #dia {
     padding: 3% 5%;
 }
 
-.bg-contactos, #programacao {
-    background-image: url('../assets/image/bg-setup.jpg');
+.bg-contactos, #programacao, .bg-bilhetes {
+    background-image: 
+    linear-gradient(
+      rgba(143, 143, 143, 0.30),
+      rgba(143, 143, 143, 0.30)
+    ),
+    url('../assets/image/bg-setup.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
