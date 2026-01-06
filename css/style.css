@@ -360,7 +360,7 @@ textarea, #dia {
 #form-bilhetes input[type="text"],
 #form-bilhetes input[type="email"], 
 #form-bilhetes input[type="number"],
-#form-bilhetes input[type="email"] {
+#form-bilhetes input[type="tel"] {
     border-radius: 5px;
     border: 1px solid #444;
     padding: 3px;
