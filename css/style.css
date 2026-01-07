@@ -197,7 +197,15 @@ main {
 .evento:hover {
     background-color: #121826;
     color: #fff;
-    border: 1px solid blueviolet;
+    border: 1px solid transparent;
+}
+
+.sabado {
+    color: red;
+}
+
+.domingo {
+    color: blueviolet;
 }
 
 .patrocinio {

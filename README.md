@@ -34,7 +34,7 @@ Aspetos Técnicos -
 Arquitetura CSS Grid & Flexbox: Layout estruturado para ser totalmente responsivo, adaptando-se de dispositivos móveis a desktops.
 Navegação Sticky: Header fixo que permite o acesso rápido ao menu em qualquer ponto do scroll.
 Acessibilidade (A11y): Uso de atributos aria-label e aria-hidden para garantir que leitores de ecrã interpretem corretamente os estados do modal e filtros.
-Estilização Contextual: Eventos e áreas do site são diferenciados visualmente por cores (ex: Palcos e Arenas) utilizando seletores de atributos específicos.
+Estilização Contextual: Eventos e seções do site são diferenciados visualmente por cores (ex: Palcos e Arenas), para facilitar a visualização.
 
 
 ## 🔗 Links
