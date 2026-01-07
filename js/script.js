@@ -41,18 +41,22 @@ function confirmarCompra(event) {
     mensagem.style.width = "75%";
 
     const modal = document.getElementById("modalPesquisa");
-    modal.style.display = "flex"; // Ou "block", dependendo do seu CSS
+    modal.style.display = "flex";
     modal.setAttribute("aria-hidden", "false");
 };
 
 
 // Confirmação de envio do formulário de contacto
 function mostrarConfirmacao(event) {
+    const form = event.target;
+    if (!form.checkValidity()) {
+        return; 
+    }
+
   event.preventDefault();
 
   const nomeInput = document.getElementById("nome");
   const mensagem = document.getElementById("mensagem-confirmacao");
-
   const nomeUtilizador = nomeInput.value;
 
    mensagem.innerHTML = `

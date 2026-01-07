@@ -80,6 +80,7 @@ header {
 .menu {
     display: flex;
     flex-direction: column;
+    text-align: center;
     
 }
 
@@ -91,7 +92,7 @@ header {
     align-self: flex-start;
     background-color: rgba(0, 255, 255, 0.549);
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 .alinhar {

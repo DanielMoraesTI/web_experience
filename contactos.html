@@ -38,7 +38,7 @@
                 <img src="assets/image/logo-transparente-semFundo.png" alt="" class="logo">
             </section>
             <section class="container-contactos">
-                <form id="form-contactos">
+                <form id="form-contactos" onsubmit="mostrarConfirmacao(event)">
                     <fieldset class="borda-fieldset">
                         <legend>Dados do utilizador</legend>
                         <div>
@@ -64,13 +64,11 @@
                         </div>
                     </fieldset>
                     <div>
-                        <button type="submit" class="botao" onclick="mostrarConfirmacao(event)">Enviar</button>
+                        <button type="submit" class="botao">Enviar</button>
                     </div>
                     <p id="mensagem-confirmacao" style="display: none">
                     </p>
-
-                </form>
-                
+                </form>                
             </section>
         </section>
     </main>
